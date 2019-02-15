@@ -1,27 +1,24 @@
-<%	request.setAttribute("contextName", request.getServletContext().getContextPath()); %>
-          <form action="${contextName}/category/update" method="post" class="form-horizontal">
-		          		<div class="form-group">
-		          			<label class="control-label col-md-2">ID</label>
-		          			<div class="col-md-10">
-		          				<input type="text" class="form-control" name="id" readonly="readonly" value="${dataItem2.id}" />	
-		          			</div>
-		          		</div>
-		          		
-		          		<div class="form-group">
-		          			<label class="control-label col-md-2">Code</label>
-		          			<div class="col-md-10">
-		          				<input type="text" class="form-control" name="code" value="${dataItem2.code}"/>
-		          			</div>
-		          		</div>
-		          		
-		          		<div class="form-group">
-		          			<label class="control-label col-md-2">Name</label>
-		          			<div class="col-md-10">
-		          				<input type="text" class="form-control" name="name" value="${dataItem2.name}"/>
-		          			</div>
-	          			</div>
-          			<div class="panel-footer">
-          				<button class="btn btn-warning"><i class="fa fa-save"></i></button>
-          				<a href="#" class="btn btn-success" data-dismiss="modal"><i class="fa fa-reply"></i></a>
-          			</div>
-          	</form>
+<!-- form mulai -->
+<form id="form-edit" class="form-horizontal">
+	<!-- id -->
+	<input type="hidden" name="id" id="id" />
+	<!-- code -->
+	<div class="form-group">
+		<label class="control-label col-md-2">CODE</label>
+		<div class="col-md-10">
+			<input type="text" class="form-control" name="code" id="code" />
+		</div>
+	</div>
+	<!-- name -->
+	<div class="form-group">
+		<label class="control-label col-md-2">NAME</label>
+		<div class="col-md-10">
+			<input type="text" class="form-control" name="name" id="name"/>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-primary" onClick="editData($('#form-edit'))"><i class="fa fa-save"></i></button>
+		<button type="button" class="btn btn-success" data-dismiss="modal"><i class="fa fa-reply"></i></button>
+	</div>
+</form>
+<!-- Form Selesai -->

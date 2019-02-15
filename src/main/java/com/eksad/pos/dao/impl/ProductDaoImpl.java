@@ -30,6 +30,15 @@ public class ProductDaoImpl implements ProductDao {
 	}
 
 	@Override
+	public List<ProductModel> search(String key) {
+		Session session = sessionFactory.getCurrentSession();
+		String hql = "select pd from ProductModel pd where pd.name like :keySearch"; 
+		Query query = session.createQuery(hql);
+		query.setParameter("keySearch", "%"+key+"%");
+		return query.getResultList();
+	}
+	
+	@Override
 	public ProductModel getById(Integer id) {
 		Session session = sessionFactory.getCurrentSession();
 		String hql = "select pd from ProductModel pd where pd.id=:id";

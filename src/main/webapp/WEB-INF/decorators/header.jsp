@@ -191,18 +191,17 @@
 				<!-- User Account: style can be found in dropdown.less -->
 				<li class="dropdown user user-menu"><a href="#"
 					class="dropdown-toggle" data-toggle="dropdown"> <img
-						src="${contextName}/resources/dist/img/user2-160x160.jpg" class="user-image"
-						alt="User Image"> <span class="hidden-xs">Alexander
-							Pierce</span>
+						src="${contextName}/resources/dist/img/avatar5.png" class="user-image"
+						alt="User Image"> <span class="hidden-xs">Muchamad Ardiansyah</span>
 				</a>
 					<ul class="dropdown-menu">
 						<!-- User image -->
-						<li class="user-header"><img src="${contextName}/resources/dist/img/user2-160x160.jpg"
+						<li class="user-header"><img src="${contextName}/resources/dist/img/avatar5.png"
 							class="img-circle" alt="User Image">
 
 							<p>
-								Alexander Pierce - Web Developer <small>Member since
-									Nov. 2012</small>
+								Muchamad Ardiansyah - Fullstack Developer <small>Member since
+									Jan. 2019</small>
 							</p></li>
 						<!-- Menu Body -->
 						<li class="user-body">

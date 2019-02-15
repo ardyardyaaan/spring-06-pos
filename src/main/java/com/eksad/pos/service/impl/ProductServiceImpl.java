@@ -23,6 +23,11 @@ public class ProductServiceImpl implements ProductService {
 	}
 
 	@Override
+	public List<ProductModel> search(String key) {
+		return this.dao.search(key);
+	}
+	
+	@Override
 	public ProductModel getById(Integer id) {
 		return this.dao.getById(id);
 	}

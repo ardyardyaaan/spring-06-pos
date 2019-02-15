@@ -7,23 +7,30 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.eksad.pos.model.PackageModel;
-import com.eksad.pos.model.PackageModel;
 import com.eksad.pos.service.PackageService;
 
+@Controller
 public class ApiPackageController {
-
 	private Log log = LogFactory.getLog(getClass());
-	
 	@Autowired
 	private PackageService service;
 	
-	@RequestMapping(value="/api/package/list", method=RequestMethod.GET)
+	@RequestMapping(value="/package/index")
+	public String index(Model model){
+		List<PackageModel> list = this.service.getList();
+		model.addAttribute("list",list);
+		return "/package/index";
+	}
+	
+	@RequestMapping(value="/api/package/", method=RequestMethod.GET)
 	public ResponseEntity<List<PackageModel>> list(){
 		ResponseEntity<List<PackageModel>> result = null;
 		try {
@@ -31,65 +38,65 @@ public class ApiPackageController {
 			result = new ResponseEntity<List<PackageModel>>(list, HttpStatus.OK);
 		} catch (Exception e) {
 			log.debug(e.getMessage(),e);
-			result = new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
+			result = new ResponseEntity<List<PackageModel>>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}		
 		return result;
 	}
 	
-	@RequestMapping(value="/api/package/search/{katakunci}", method=RequestMethod.GET)
-	public ResponseEntity<List<PackageModel>> search(@PathVariable("katakunci") String cari) {
+	@RequestMapping(value="/api/package/search/{katakunci}",method=RequestMethod.GET)
+	public ResponseEntity<List<PackageModel>> search(@PathVariable("katakunci") String cari){
 		ResponseEntity<List<PackageModel>> result = null;
 		try {
 			List<PackageModel> list = this.service.search(cari);
 			result = new ResponseEntity<List<PackageModel>>(list,HttpStatus.OK);
 		} catch (Exception err) {
 			log.debug(err.getMessage(),err);
-			result = new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
+			result = new ResponseEntity<List<PackageModel>>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 		return result;
 	}
 	
-	@RequestMapping(value="/api/package/get/{catId}", method=RequestMethod.GET)
-	public ResponseEntity<PackageModel> getById(@PathVariable("catId") int vId) {
+	@RequestMapping(value="/api/package/{itemId}",method=RequestMethod.GET)
+	public ResponseEntity<PackageModel> getById(@PathVariable("itemId") int vId){
 		ResponseEntity<PackageModel> result = null;
 		try {
 			PackageModel cat = this.service.getById(vId);
 			result = new ResponseEntity<PackageModel>(cat,HttpStatus.OK);
 		} catch (Exception e) {
 			log.debug(e.getMessage(), e);
-			result = new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
+			result = new ResponseEntity<PackageModel>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 		return result;
 	}
 	
-	@RequestMapping(value="api/package", method=RequestMethod.POST)
-	public ResponseEntity<PackageModel> postInsert(@RequestBody PackageModel item) {
+	@RequestMapping(value="/api/package/", method=RequestMethod.POST)
+	public ResponseEntity<PackageModel> postInsert(@RequestBody PackageModel item){
 		ResponseEntity<PackageModel> result = null;
 		try {
 			this.service.insert(item);
 			result = new ResponseEntity<PackageModel>(item, HttpStatus.CREATED);
 		} catch (Exception e) {
-			log.debug(e.getMessage(), e);
-			result = new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
+			log.debug(e.getMessage(),e);
+			result = new ResponseEntity<PackageModel>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 		return result;
 	}
 	
-	@RequestMapping(value="api/package", method=RequestMethod.PUT)
-	public ResponseEntity<PackageModel> putUpdate(@RequestBody PackageModel item) {
+	@RequestMapping(value="/api/package/", method=RequestMethod.PUT)
+	public ResponseEntity<PackageModel> putUpdate(@RequestBody PackageModel item){
 		ResponseEntity<PackageModel> result = null;
 		try {
 			this.service.update(item);
 			result = new ResponseEntity<PackageModel>(item, HttpStatus.ACCEPTED);
 		} catch (Exception e) {
-			log.debug(e.getMessage(), e);
-			result = new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
+			log.debug(e.getMessage(),e);
+			result = new ResponseEntity<PackageModel>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 		return result;
 	}
 	
-	@RequestMapping(value="/api/package/{catId}", method=RequestMethod.DELETE)
-	public ResponseEntity<PackageModel> delApi(@PathVariable("catId") Integer vid){
+	@RequestMapping(value="/api/package/{itemId}", method=RequestMethod.DELETE)
+	public ResponseEntity<PackageModel> delApi(@PathVariable("itemId") Integer vid){
 		ResponseEntity<PackageModel> result = null;
 		try {
 			PackageModel item = this.service.getById(vid);

@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,14 +19,18 @@ import com.eksad.pos.service.SupplierService;
 
 @Controller
 public class ApiSupplierController {
-	
 	private Log log = LogFactory.getLog(getClass());
-	
 	@Autowired
 	private SupplierService service;
 	
+	@RequestMapping(value="/supplier/index")
+	public String index(Model model){
+		List<SupplierModel> list = this.service.getList();
+		model.addAttribute("list",list);
+		return "/supplier/index";
+	}
 	
-	@RequestMapping(value="/api/supplier/list", method=RequestMethod.GET)
+	@RequestMapping(value="/api/supplier/", method=RequestMethod.GET)
 	public ResponseEntity<List<SupplierModel>> list(){
 		ResponseEntity<List<SupplierModel>> result = null;
 		try {
@@ -33,65 +38,65 @@ public class ApiSupplierController {
 			result = new ResponseEntity<List<SupplierModel>>(list, HttpStatus.OK);
 		} catch (Exception e) {
 			log.debug(e.getMessage(),e);
-			result = new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
+			result = new ResponseEntity<List<SupplierModel>>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}		
 		return result;
 	}
 	
-	@RequestMapping(value="/api/supplier/search/{katakunci}", method=RequestMethod.GET)
-	public ResponseEntity<List<SupplierModel>> search(@PathVariable("katakunci") String cari) {
+	@RequestMapping(value="/api/supplier/search/{katakunci}",method=RequestMethod.GET)
+	public ResponseEntity<List<SupplierModel>> search(@PathVariable("katakunci") String cari){
 		ResponseEntity<List<SupplierModel>> result = null;
 		try {
 			List<SupplierModel> list = this.service.search(cari);
 			result = new ResponseEntity<List<SupplierModel>>(list,HttpStatus.OK);
 		} catch (Exception err) {
 			log.debug(err.getMessage(),err);
-			result = new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
+			result = new ResponseEntity<List<SupplierModel>>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 		return result;
 	}
 	
-	@RequestMapping(value="/api/supplier/get/{catId}", method=RequestMethod.GET)
-	public ResponseEntity<SupplierModel> getById(@PathVariable("catId") int vId) {
+	@RequestMapping(value="/api/supplier/{itemId}",method=RequestMethod.GET)
+	public ResponseEntity<SupplierModel> getById(@PathVariable("itemId") int vId){
 		ResponseEntity<SupplierModel> result = null;
 		try {
-			SupplierModel cat = this.service.getById(vId);
-			result = new ResponseEntity<SupplierModel>(cat,HttpStatus.OK);
+			SupplierModel sup = this.service.getById(vId);
+			result = new ResponseEntity<SupplierModel>(sup,HttpStatus.OK);
 		} catch (Exception e) {
 			log.debug(e.getMessage(), e);
-			result = new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
+			result = new ResponseEntity<SupplierModel>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 		return result;
 	}
 	
-	@RequestMapping(value="api/supplier", method=RequestMethod.POST)
-	public ResponseEntity<SupplierModel> postInsert(@RequestBody SupplierModel item) {
+	@RequestMapping(value="/api/supplier/", method=RequestMethod.POST)
+	public ResponseEntity<SupplierModel> postInsert(@RequestBody SupplierModel item){
 		ResponseEntity<SupplierModel> result = null;
 		try {
 			this.service.insert(item);
 			result = new ResponseEntity<SupplierModel>(item, HttpStatus.CREATED);
 		} catch (Exception e) {
-			log.debug(e.getMessage(), e);
-			result = new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
+			log.debug(e.getMessage(),e);
+			result = new ResponseEntity<SupplierModel>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 		return result;
 	}
 	
-	@RequestMapping(value="api/supplier", method=RequestMethod.PUT)
-	public ResponseEntity<SupplierModel> putUpdate(@RequestBody SupplierModel item) {
+	@RequestMapping(value="/api/supplier/", method=RequestMethod.PUT)
+	public ResponseEntity<SupplierModel> putUpdate(@RequestBody SupplierModel item){
 		ResponseEntity<SupplierModel> result = null;
 		try {
 			this.service.update(item);
 			result = new ResponseEntity<SupplierModel>(item, HttpStatus.ACCEPTED);
 		} catch (Exception e) {
-			log.debug(e.getMessage(), e);
-			result = new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
+			log.debug(e.getMessage(),e);
+			result = new ResponseEntity<SupplierModel>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 		return result;
 	}
 	
-	@RequestMapping(value="/api/supplier/{catId}", method=RequestMethod.DELETE)
-	public ResponseEntity<SupplierModel> delApi(@PathVariable("catId") Integer vid){
+	@RequestMapping(value="/api/supplier/{itemId}", method=RequestMethod.DELETE)
+	public ResponseEntity<SupplierModel> delApi(@PathVariable("itemId") Integer vid){
 		ResponseEntity<SupplierModel> result = null;
 		try {
 			SupplierModel item = this.service.getById(vid);

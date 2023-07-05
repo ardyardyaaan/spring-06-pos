@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-05T04:56:57.212Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="mRda45P_ZXndPGSjqxPG" version="21.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-05T05:21:43.552Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="anU7eeLJrK0JcFA9-H4I" version="21.5.2" type="github" pages="2">
   <diagram name="Page-1" id="h6grI7qdc10ozD1cTEPd">
     <mxGraphModel dx="1434" dy="775" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -75,6 +75,69 @@
         </mxCell>
         <mxCell id="YV4U8w6sLnlZu5qjyZpr-6" value="START" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="170" y="78" width="100" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="xz3-d2e5lThAP5KxYGmf" name="Page-2">
+    <mxGraphModel dx="1434" dy="775" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cSz2yeqIexrVsM8IRzFY-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;SISTEM&lt;br&gt;TIA 4.0&lt;/font&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="345" y="280" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="cSz2yeqIexrVsM8IRzFY-2" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;USER SUBCO&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="30" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="cSz2yeqIexrVsM8IRzFY-3" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;" edge="1" parent="1" target="cSz2yeqIexrVsM8IRzFY-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="80" as="sourcePoint" />
+            <mxPoint x="360" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cSz2yeqIexrVsM8IRzFY-4" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;USER TIA&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="630" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="cSz2yeqIexrVsM8IRzFY-6" value="Reminder untuk submit Budget atau Laporan Keuangan" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="40" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cSz2yeqIexrVsM8IRzFY-7" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="430" as="sourcePoint" />
+            <mxPoint x="640" y="680" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="425" y="680" />
+              <mxPoint x="575" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cSz2yeqIexrVsM8IRzFY-8" value="Menerima Reminder untuk submit Budget atau Laporan Keuangan" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="270" y="680" width="370" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cSz2yeqIexrVsM8IRzFY-9" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;" edge="1" parent="1" source="cSz2yeqIexrVsM8IRzFY-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="796.04" y="637" as="sourcePoint" />
+            <mxPoint x="505" y="350" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="710" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cSz2yeqIexrVsM8IRzFY-10" value="Menginput/Mengupload data Budget atau Laporan Keuangan" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="320" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cSz2yeqIexrVsM8IRzFY-12" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="cSz2yeqIexrVsM8IRzFY-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="350" as="sourcePoint" />
+            <mxPoint x="330" y="300" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="110" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cSz2yeqIexrVsM8IRzFY-13" value="Memverifikasi data Budget atau Laporan Keuangan yang telah di submit oleh USER TIA" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="63" y="360" width="280" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

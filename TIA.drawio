@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-05T04:52:31.636Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="5anEqqmJDWEMaNUbsNfg" version="21.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-05T04:56:57.212Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="mRda45P_ZXndPGSjqxPG" version="21.5.2" type="github">
   <diagram name="Page-1" id="h6grI7qdc10ozD1cTEPd">
     <mxGraphModel dx="1434" dy="775" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -28,13 +28,28 @@
             <mxPoint x="250" y="560" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="YV4U8w6sLnlZu5qjyZpr-25" value="Email" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="YV4U8w6sLnlZu5qjyZpr-2">
+          <mxGeometry x="260" y="240" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YV4U8w6sLnlZu5qjyZpr-22" value="Template Docs" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="YV4U8w6sLnlZu5qjyZpr-2">
+          <mxGeometry x="310" y="260" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YV4U8w6sLnlZu5qjyZpr-15" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;exitX=0.453;exitY=1.01;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="YV4U8w6sLnlZu5qjyZpr-2" source="YV4U8w6sLnlZu5qjyZpr-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210.00000000000009" y="260" as="sourcePoint" />
+            <mxPoint x="511.08000000000004" y="308" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="210.08" y="308" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="YV4U8w6sLnlZu5qjyZpr-3" value="USER SUBCO" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="430" y="30" width="400" height="750" as="geometry" />
         </mxCell>
         <mxCell id="YV4U8w6sLnlZu5qjyZpr-10" value="Menyusun Budget atau Laporan Keuangan" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="YV4U8w6sLnlZu5qjyZpr-3">
           <mxGeometry x="100" y="250" width="190" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="YV4U8w6sLnlZu5qjyZpr-11" value="Mengirimkan Budget atau Laporan&lt;br&gt;&amp;nbsp;Keuangan" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="YV4U8w6sLnlZu5qjyZpr-3">
+        <mxCell id="YV4U8w6sLnlZu5qjyZpr-11" value="Menginput/Mengupload Budget atau Laporan&lt;br&gt;&amp;nbsp;Keuangan" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="YV4U8w6sLnlZu5qjyZpr-3">
           <mxGeometry x="100" y="410" width="190" height="100" as="geometry" />
         </mxCell>
         <mxCell id="YV4U8w6sLnlZu5qjyZpr-16" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="YV4U8w6sLnlZu5qjyZpr-3">
@@ -52,14 +67,11 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="YV4U8w6sLnlZu5qjyZpr-15" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;exitX=0.468;exitY=1.02;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="YV4U8w6sLnlZu5qjyZpr-7" target="YV4U8w6sLnlZu5qjyZpr-10">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="220" y="340" as="sourcePoint" />
-            <mxPoint x="460" y="300" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="240" y="330" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="YV4U8w6sLnlZu5qjyZpr-23" value="Template Docs" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="YV4U8w6sLnlZu5qjyZpr-3">
+          <mxGeometry x="260" y="330" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YV4U8w6sLnlZu5qjyZpr-24" value="Template Docs" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="YV4U8w6sLnlZu5qjyZpr-3">
+          <mxGeometry x="260" y="490" width="60" height="40" as="geometry" />
         </mxCell>
         <mxCell id="YV4U8w6sLnlZu5qjyZpr-6" value="START" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="170" y="78" width="100" height="50" as="geometry" />

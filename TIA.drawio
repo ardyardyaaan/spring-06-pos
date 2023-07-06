@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-06T08:14:57.801Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Safari/605.1.15" etag="KAVaqh7NpmHoTqvAlV9S" version="21.6.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-07-06T08:27:03.398Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Safari/605.1.15" etag="CFHed-CMH0UQTJfSIZ82" version="21.6.1" type="github" pages="2">
   <diagram name="FlowChart" id="h6grI7qdc10ozD1cTEPd">
     <mxGraphModel dx="1194" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -87,20 +87,20 @@
         <mxCell id="cSz2yeqIexrVsM8IRzFY-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;SISTEM&lt;br&gt;TIA 4.0&lt;/font&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="345" y="338" width="160" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="cSz2yeqIexrVsM8IRzFY-2" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;USER SUBCO&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="cSz2yeqIexrVsM8IRzFY-2" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;USER TIA&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="30" y="88" width="160" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="cSz2yeqIexrVsM8IRzFY-3" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;" parent="1" target="cSz2yeqIexrVsM8IRzFY-1" edge="1">
+        <mxCell id="cSz2yeqIexrVsM8IRzFY-3" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="cSz2yeqIexrVsM8IRzFY-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="190" y="138" as="sourcePoint" />
-            <mxPoint x="360" y="298" as="targetPoint" />
+            <mxPoint x="190" y="114" as="sourcePoint" />
+            <mxPoint x="425" y="314" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cSz2yeqIexrVsM8IRzFY-4" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;USER TIA&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="cSz2yeqIexrVsM8IRzFY-4" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;USER SUB HOLDING&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="650" y="688" width="160" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="cSz2yeqIexrVsM8IRzFY-6" value="Reminder untuk submit Budget atau Laporan Keuangan" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="193" y="112" width="300" height="30" as="geometry" />
+        <mxCell id="cSz2yeqIexrVsM8IRzFY-6" value="Mengecek Budget atau Laporan Keuangan Sub Holding" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="195" y="88" width="300" height="30" as="geometry" />
         </mxCell>
         <mxCell id="cSz2yeqIexrVsM8IRzFY-7" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -135,8 +135,8 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cSz2yeqIexrVsM8IRzFY-13" value="Memverifikasi data Budget atau Laporan Keuangan yang telah di submit oleh USER TIA" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="63" y="418" width="280" height="30" as="geometry" />
+        <mxCell id="cSz2yeqIexrVsM8IRzFY-13" value="Memverifikasi data Budget atau Laporan Keuangan yang telah di kirim oleh USER SUB HOLDING" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="63" y="414" width="280" height="30" as="geometry" />
         </mxCell>
         <mxCell id="RbjlpHTDaSiQq2_mB3fw-1" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;DATA FLOW DIAGRAM TIA 4.0 Level 0&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="235" y="948" width="380" height="30" as="geometry" />
@@ -178,6 +178,30 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="774.5" y="688" as="sourcePoint" />
             <mxPoint x="774.5" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o9bnvxfP6gBcrila1IxN-12" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;entryX=0.35;entryY=0.02;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="cSz2yeqIexrVsM8IRzFY-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="130" as="sourcePoint" />
+            <mxPoint x="401" y="331.04999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o9bnvxfP6gBcrila1IxN-13" value="Kirim Manual Reminder ke Sub Holding yang belum mengirim budget atau laporan keuangan" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="193" y="140" width="203" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="o9bnvxfP6gBcrila1IxN-14" value="Template Laporan Keuangan Storage File" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="550" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="o9bnvxfP6gBcrila1IxN-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.919;exitY=-0.022;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="o9bnvxfP6gBcrila1IxN-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="520" as="sourcePoint" />
+            <mxPoint x="370" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o9bnvxfP6gBcrila1IxN-18" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.988;entryY=0.078;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.219;exitY=0.947;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="cSz2yeqIexrVsM8IRzFY-1" target="o9bnvxfP6gBcrila1IxN-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="346" y="538" as="sourcePoint" />
+            <mxPoint x="330" y="550" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>

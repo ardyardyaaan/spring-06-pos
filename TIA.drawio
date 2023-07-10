@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-10T10:18:32.208Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Safari/605.1.15" etag="Anp7HM_3BQv08EJh_IaE" version="21.6.1" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-07-10T10:21:08.712Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Safari/605.1.15" etag="RPaEomln7pZRF3tvAy1-" version="21.6.1" type="github" pages="3">
   <diagram name="FlowChart" id="h6grI7qdc10ozD1cTEPd">
     <mxGraphModel dx="1194" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -189,7 +189,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="-pfoxRHxUGtJ2-Rnb1YB-10" value="Menginput/Mengupload data Budget atau Laporan Keuangan" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="-pfoxRHxUGtJ2-Rnb1YB-1">
-          <mxGeometry x="496" y="381" width="350" height="30" as="geometry" />
+          <mxGeometry x="520" y="370" width="174" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-pfoxRHxUGtJ2-Rnb1YB-11" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="-pfoxRHxUGtJ2-Rnb1YB-1" target="-pfoxRHxUGtJ2-Rnb1YB-3">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -207,21 +207,12 @@
           <mxGeometry x="235" y="948" width="380" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-pfoxRHxUGtJ2-Rnb1YB-14" value="Cronjob Reminder" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="-pfoxRHxUGtJ2-Rnb1YB-1">
-          <mxGeometry x="480" y="140" width="80" height="80" as="geometry" />
+          <mxGeometry x="720" y="160" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="-pfoxRHxUGtJ2-Rnb1YB-15" value="Manual Reminder" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="-pfoxRHxUGtJ2-Rnb1YB-1">
-          <mxGeometry x="550" y="200" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="-pfoxRHxUGtJ2-Rnb1YB-16" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="-pfoxRHxUGtJ2-Rnb1YB-1" target="-pfoxRHxUGtJ2-Rnb1YB-14">
+        <mxCell id="-pfoxRHxUGtJ2-Rnb1YB-16" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=0.806;exitY=0.08;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="-pfoxRHxUGtJ2-Rnb1YB-1" source="-pfoxRHxUGtJ2-Rnb1YB-2">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="440" y="338" as="sourcePoint" />
-            <mxPoint x="488.03999999999996" y="220" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="-pfoxRHxUGtJ2-Rnb1YB-17" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.075;entryY=0.813;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.663;exitY=0.027;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="-pfoxRHxUGtJ2-Rnb1YB-1" source="-pfoxRHxUGtJ2-Rnb1YB-2" target="-pfoxRHxUGtJ2-Rnb1YB-15">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="470" y="350" as="sourcePoint" />
-            <mxPoint x="520" y="300" as="targetPoint" />
+            <mxPoint x="464.31999999999994" y="338" as="sourcePoint" />
+            <mxPoint x="719.9957287525378" y="213.28427124746213" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="-pfoxRHxUGtJ2-Rnb1YB-18" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;exitX=0.631;exitY=0.987;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="-pfoxRHxUGtJ2-Rnb1YB-1">
@@ -235,15 +226,6 @@
         </mxCell>
         <mxCell id="-pfoxRHxUGtJ2-Rnb1YB-19" value="Download Template Budget atau Laporan Keuangan" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="-pfoxRHxUGtJ2-Rnb1YB-1">
           <mxGeometry x="450" y="688" width="190" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="-pfoxRHxUGtJ2-Rnb1YB-20" value="Menyusun Budget dan Laporan Keuangan" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="-pfoxRHxUGtJ2-Rnb1YB-1">
-          <mxGeometry x="720" y="488" width="110" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="-pfoxRHxUGtJ2-Rnb1YB-21" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="-pfoxRHxUGtJ2-Rnb1YB-1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="774.5" y="688" as="sourcePoint" />
-            <mxPoint x="774.5" y="600" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="-pfoxRHxUGtJ2-Rnb1YB-22" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;entryX=0.35;entryY=0.02;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="-pfoxRHxUGtJ2-Rnb1YB-1" target="-pfoxRHxUGtJ2-Rnb1YB-2">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -267,6 +249,12 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="346" y="538" as="sourcePoint" />
             <mxPoint x="330" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eyj6pHXvm4YuOzF9M-4Y-0" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.669;entryY=0.022;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="-pfoxRHxUGtJ2-Rnb1YB-1" source="-pfoxRHxUGtJ2-Rnb1YB-14" target="-pfoxRHxUGtJ2-Rnb1YB-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="760" y="250" as="sourcePoint" />
+            <mxPoint x="810" y="270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>

@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-07-11T04:26:56.236Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Safari/605.1.15" etag="C24gFOrRmBGX7j8vfRTL" version="21.6.1" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-07-16T10:29:57.089Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Safari/605.1.15" etag="5zgZKOEeeESokKcy6Tyl" version="21.6.1" type="github" pages="3">
   <diagram name="FlowChart" id="h6grI7qdc10ozD1cTEPd">
-    <mxGraphModel dx="1194" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1194" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -80,7 +80,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="xz3-d2e5lThAP5KxYGmf" name="DataFlowDiagram(Lvl.0)">
-    <mxGraphModel dx="1194" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1194" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -236,19 +236,16 @@
         <mxCell id="-pfoxRHxUGtJ2-Rnb1YB-23" value="Kirim Manual Reminder ke Sub Holding yang belum mengirim budget atau laporan keuangan" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="-pfoxRHxUGtJ2-Rnb1YB-1" vertex="1">
           <mxGeometry x="193" y="140" width="203" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="-pfoxRHxUGtJ2-Rnb1YB-24" value="Template Budget atau Laporan Keuangan Storage File" style="rounded=1;whiteSpace=wrap;html=1;" parent="-pfoxRHxUGtJ2-Rnb1YB-1" vertex="1">
-          <mxGeometry x="150" y="550" width="160" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="-pfoxRHxUGtJ2-Rnb1YB-25" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.919;exitY=-0.022;exitDx=0;exitDy=0;exitPerimeter=0;" parent="-pfoxRHxUGtJ2-Rnb1YB-1" source="-pfoxRHxUGtJ2-Rnb1YB-24" edge="1">
+        <mxCell id="-pfoxRHxUGtJ2-Rnb1YB-25" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.908;exitY=-0.033;exitDx=0;exitDy=0;exitPerimeter=0;" parent="-pfoxRHxUGtJ2-Rnb1YB-1" source="QSEjcJzjDLLwEEKNf1Xt-0" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="320" y="520" as="sourcePoint" />
-            <mxPoint x="370" y="470" as="targetPoint" />
+            <mxPoint x="289.99999999999994" y="538.02" as="sourcePoint" />
+            <mxPoint x="362.96" y="460" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-pfoxRHxUGtJ2-Rnb1YB-26" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.988;entryY=0.078;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.219;exitY=0.947;exitDx=0;exitDy=0;exitPerimeter=0;" parent="-pfoxRHxUGtJ2-Rnb1YB-1" source="-pfoxRHxUGtJ2-Rnb1YB-2" target="-pfoxRHxUGtJ2-Rnb1YB-24" edge="1">
+        <mxCell id="-pfoxRHxUGtJ2-Rnb1YB-26" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.983;entryY=0.117;entryDx=0;entryDy=0;entryPerimeter=0;" parent="-pfoxRHxUGtJ2-Rnb1YB-1" target="QSEjcJzjDLLwEEKNf1Xt-0" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="346" y="538" as="sourcePoint" />
-            <mxPoint x="330" y="550" as="targetPoint" />
+            <mxPoint x="370" y="470" as="sourcePoint" />
+            <mxPoint x="299.99999999999994" y="549.97" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="eyj6pHXvm4YuOzF9M-4Y-0" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.669;entryY=0.022;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="-pfoxRHxUGtJ2-Rnb1YB-1" source="-pfoxRHxUGtJ2-Rnb1YB-14" target="-pfoxRHxUGtJ2-Rnb1YB-5" edge="1">
@@ -256,6 +253,9 @@
             <mxPoint x="760" y="250" as="sourcePoint" />
             <mxPoint x="810" y="270" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="QSEjcJzjDLLwEEKNf1Xt-0" value="Template Budget atau Laporan Keuangan Storage File" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;" vertex="1" parent="-pfoxRHxUGtJ2-Rnb1YB-1">
+          <mxGeometry x="170" y="550" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
